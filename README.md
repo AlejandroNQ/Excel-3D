@@ -13,3 +13,9 @@ Q-E	      Acerca/aleja el punto de vista
 UP-DOWN	      Desplaza el intervalo imagen		
 LEFT-RIGHT    Amplia/reduce el intervalo imagen	
 ```
+
+## Advertencia
+
+El control por teclado requiere macros VBA. Para obtener la experiencia de usuario adecuada deberán habilitarse.
+
+El código íntegro de las macros está [aquí](https://github.com/AlejandroNQ/Excel-3D/blob/main/VBA-Controls)
