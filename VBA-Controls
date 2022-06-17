@@ -1,0 +1,111 @@
+Sub Play()
+
+Application.OnKey "{ESC}", "Reset"
+
+Application.OnKey "w", "MoveUp"
+Application.OnKey "s", "MoveDown"
+Application.OnKey "a", "MoveLeft"
+Application.OnKey "d", "MoveRight"
+
+Application.OnKey "e", "DistMas"
+Application.OnKey "q", "DistMenos"
+
+
+Application.OnKey "{UP}", "CentroMas"
+Application.OnKey "{DOWN}", "CentroMenos"
+Application.OnKey "{LEFT}", "AnchoMenos"
+Application.OnKey "{RIGHT}", "AnchoMas"
+
+
+End Sub
+
+Sub Reset()
+
+Application.OnKey "{ESC}"
+
+Application.OnKey "w"
+Application.OnKey "s"
+Application.OnKey "a"
+Application.OnKey "d"
+
+Application.OnKey "e"
+Application.OnKey "q"
+
+Application.OnKey "{UP}"
+Application.OnKey "{DOWN}"
+Application.OnKey "{LEFT}"
+Application.OnKey "{RIGHT}"
+
+
+End Sub
+
+
+Sub MoveUp()
+
+ Worksheets("Hoja3").Cells(4, 2).Value = Worksheets("Hoja3").Cells(4, 2).Value + Worksheets("Hoja3").Cells(16, 2).Value
+ 
+End Sub
+
+Sub MoveDown()
+
+ Worksheets("Hoja3").Cells(4, 2).Value = Worksheets("Hoja3").Cells(4, 2).Value - Worksheets("Hoja3").Cells(16, 2).Value
+ 
+End Sub
+
+Sub MoveLeft()
+
+ Worksheets("Hoja3").Cells(3, 2).Value = Worksheets("Hoja3").Cells(3, 2).Value - Worksheets("Hoja3").Cells(16, 2).Value
+ 
+End Sub
+
+Sub MoveRight()
+
+ Worksheets("Hoja3").Cells(3, 2).Value = Worksheets("Hoja3").Cells(3, 2).Value + Worksheets("Hoja3").Cells(16, 2).Value
+ 
+End Sub
+
+
+
+
+Sub AnchoMenos()
+
+ Worksheets("Hoja3").Cells(11, 2).Value = Worksheets("Hoja3").Cells(11, 2).Value - Worksheets("Hoja3").Cells(17, 2).Value
+ 
+End Sub
+
+
+Sub AnchoMas()
+
+ Worksheets("Hoja3").Cells(11, 2).Value = Worksheets("Hoja3").Cells(11, 2).Value + Worksheets("Hoja3").Cells(17, 2).Value
+ 
+End Sub
+
+
+
+Sub CentroMenos()
+
+ Worksheets("Hoja3").Cells(10, 2).Value = Worksheets("Hoja3").Cells(10, 2).Value - Worksheets("Hoja3").Cells(17, 2).Value
+ 
+End Sub
+
+
+Sub CentroMas()
+
+ Worksheets("Hoja3").Cells(10, 2).Value = Worksheets("Hoja3").Cells(10, 2).Value + Worksheets("Hoja3").Cells(17, 2).Value
+ 
+End Sub
+
+
+
+Sub DistMenos()
+
+ Worksheets("Hoja3").Cells(5, 2).Value = Worksheets("Hoja3").Cells(5, 2).Value - Worksheets("Hoja3").Cells(17, 2).Value
+ 
+End Sub
+
+
+Sub DistMas()
+
+ Worksheets("Hoja3").Cells(5, 2).Value = Worksheets("Hoja3").Cells(5, 2).Value + Worksheets("Hoja3").Cells(17, 2).Value
+ 
+End Sub
